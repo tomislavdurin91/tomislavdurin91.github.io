@@ -12,7 +12,8 @@
     "format": "prettier --write src"
   },
   "dependencies": {
-    "astro": "2.3.0"
+    "astro": "2.3.0",
+    "gsap": "file:gsap-bonus.tgz"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "5.58.0",
