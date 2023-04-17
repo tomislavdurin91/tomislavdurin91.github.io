@@ -1,8 +1,12 @@
 ---
 import DefaultLayout from '@layouts/MinimalLayout.astro';
+import HeaderComponent from '@components/HeaderComponent.astro';
+import HamburgerComponent from '@components/HamburgerComponent.astro';
 const { title } = Astro.props;
 ---
 
 <DefaultLayout title={title}>
+    <HeaderComponent />
     <main><slot /></main>
+    <HamburgerComponent slot='hamburger' />
 </DefaultLayout>

@@ -1,0 +1,30 @@
+---
+import HeaderLogo from '@components/HeaderLogo.astro';
+---
+
+<header>
+    <!-- TODO URL -->
+    <a href='/' title="Visit Tomislav Đurin's homepage">
+        <HeaderLogo />
+    </a>
+</header>
+
+<style lang='scss'>
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        // height: 7rem;
+        z-index: 10;
+    }
+    a {
+        padding: 1rem;
+        color: #fff;
+
+        @media (min-width: 320px) {
+            margin-top: 1rem;
+            margin-left: 1rem;
+        }
+    }
+</style>
